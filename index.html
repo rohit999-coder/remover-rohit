@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Background Remover</h1>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-btn">
+                <i class="fas fa-cloud-upload-alt"></i> Choose Image
+            </label>
+        </div>
+        <div class="preview-section">
+            <div class="image-container">
+                <h3><i class="fas fa-image"></i> Original Image</h3>
+                <img id="originalImage" src="#" alt="Original image">
+            </div>
+            <div class="image-container">
+                <h3><i class="fas fa-magic"></i> Processed Image</h3>
+                <img id="processedImage" src="#" alt="Processed image">
+            </div>
+        </div>
+        <button id="removeBackground" class="remove-btn" disabled>
+            <i class="fas fa-eraser"></i> Remove Background
+        </button>
+        <button id="downloadBtn" class="download-btn">
+            <span class="download-text"><i class="fas fa-download"></i> Download Image</span>
+            <span class="download-size"></span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
